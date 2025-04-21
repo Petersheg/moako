@@ -167,7 +167,9 @@ img {
     opacity: 1;
     transform: matrix(1, 0, 0, 1, 0, 0);
     -ms-transform: matrix(1, 0, 0, 1, 0, 0);
-    -webkit-transform: matrix(1, 0, 0, 1, 0, 0); } }
+    -webkit-transform: matrix(1, 0, 0, 1, 0, 0); 
+  }
+}
 
     /*STYLE FOR MAIN PAGE*/
     main{
@@ -176,14 +178,16 @@ img {
       line-height: 2;
       overflow: hidden;
     }
-    .brand{
+    .brand-logo{
       color: white;
       position: absolute;
-      top: 70px;
+      top: 60px;
+      max-width: 15rem;
     }
    .hero{
-      background-image: url('../img/Rectangle\ 1.svg');
-      height: auto;
+      background-image: linear-gradient(to bottom, rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+      url('../img/image\ 1.svg');
+      height: 100vh;
       background-repeat: no-repeat;
       background-size: cover;
     }
@@ -195,16 +199,38 @@ img {
       display: block;
     }
     .heroImg{
-      max-width: 70%;
+      max-width: 100%;
     }
-    .heroPara{
-      font-size: 17px;
+
+    .heroPara {
+      font-size: 20px;
       color: white;
-      max-width: 60%;
+      max-width: 80%;
       line-height: 1.9;
       letter-spacing: 1px;
       padding: 10px 0 ;
       animation: fadeIn 1s ease-in 2s both;
+      margin-top: 4rem;
+    }
+
+    .heroPa {
+      font-size: 4rem;
+      color: white;
+      animation: fadeIn 1s ease-in 2s both;
+    }
+
+    #overlay{
+      position: fixed;
+      display: none;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0,0,0,0.5);
+      z-index: 2;
+      cursor: pointer;
     }
 
 /* STYLE FOR ABOUT SECTION */
@@ -344,7 +370,7 @@ img {
   display: grid;
   grid-template-columns: 1fr 2fr;
   position: relative;
-  box-shadow: 0 5px 10px #3333;
+  box-shadow: 0 5px 10px #142851;
 }
 .contactForm{
   padding-left: 100px;
@@ -362,7 +388,7 @@ img {
   height: 70%;
   padding: 20px 30px;
   text-align: center;
-  box-shadow: 0 5px 10px #3333;
+  box-shadow: 0 5px 10px #142851;
 }
 .form-conntrol{
   font-size: 16px !important;
@@ -377,9 +403,15 @@ img {
   margin: 0 auto;
   padding-bottom: 20px;
 }
+
+.contactImg{
+  background-color: black;
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
 /* FOOTER STYLE */
 .footer{
-  background-color: #333333;
+  background-color: #142851;
   padding: 60px 20px;
   color: rgba(255, 255, 255, 0.699);
 }
@@ -408,6 +440,47 @@ img {
 .wit p{
   height: 35px;
   width: 35px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+.header-text {
+  font-family: 'Dancing Script', cursive;
+  font-size: 50px;
+  display: flex;
+  gap: 10px;
+}
+
+.header-text .black {
+  color: black;
+  font-weight: 400;
+}
+
+.header-text .salmon {
+  color: rgb(20 40 81);
+  font-weight: 700;
+}
+
+.onHover:hover,
+.onHover:hover > h2,
+.onHover:hover > p,
+.onHover:hover > .icon:hover {
+  background-color: #142851;
+  color: white !important;
+}
+
+.onHover:hover svg path {
+  fill: gold; 
+}
+
+.whasapp-logo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 1000;
+  border-radius: 20%;
+  width: 15rem;
 }
 
 /* Media Query style */
@@ -440,11 +513,7 @@ img {
   max-width: 70%;
   height: 38%;
   padding: 4px 10px;
-}
-
-.heroPara{
-  max-width: 100%;
-  padding: 80px 0 40px 0;
+  display: none;
 }
 
 .contactForm {
@@ -465,5 +534,22 @@ img {
   .menu ul{
     display: flex;
     flex-direction: column;
+  }
+
+  .brand-logo{
+    max-width: 10rem;
+  }
+
+  .menu ul li a {
+    font-size: 1.5rem;
+    line-height: 4rem;
+  }
+
+  .heroPara {
+    font-size: 15px;
+  }
+
+  .heroPa {
+    font-size: 2.5rem;
   }
 }

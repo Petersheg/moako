@@ -12,9 +12,18 @@
  <!-- google fonts -->
  <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
 
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+  href="https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@300;400;500&display=swap"
+  rel="stylesheet"
+  />
+  <link href="styles.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+
  <!-- font awesome -->
  <link rel="stylesheet" href="css/all.css">
- <title>Flexla | professional Make Up Artiste</title>
+ <title>Moako Group | Engineering in the future, Now</title>
  <style>
  </style>
 </head>
@@ -38,85 +47,499 @@
     </ul>
   </div>
   </div>
-  <div class="heroWord container">
-    <h1 class="brand">FLEXLA</h1>
-   <div class="heroImg">
-     <img src="./img/makeup.svg" class="img-fluid">
-   </div>
-   <p class="heroPara">
-    I deliver the best professional make in all of LA. You can always hire me for the best job. 
-    some other short text here and i am done.
-    <button class="btn btn-light p-3 my-5">Book Now</button>
-   </p>
+  <div class="px-5 md:px-20">
+    <div class="brand-logo">
+      <img src="./img/Logo.svg" alt="moako logo">
+    </div>
+
+    <div class="grid">
+      <div>
+        <p class="heroPa">Moako Group</p>
+        <p class="heroPa">Engineering in the future, Now </p>
+      </div>
+      
+      <div class="basis-1/2">
+        <p class="heroPara">
+          To provide high-quality, reliable, and sustainable engineering solutions
+          across a variety of sectors with an emphasis on customer satisfaction and
+          innovative approaches.
+        </p>
+      </div>
+    </div>
+
   </div>
 </header>
 
 <main>
-  <section class="container" id="about">
-    <div class="about">
-      
-    <div class="aboutImg">
-      <img src="./img/Group 2.svg" alt="about me">
+  <section class="container" id ="portfolio">
+    <div class="flex justify-center">
+      <div class="header-text">
+        <span class="black">Our</span>
+        <span class="salmon">Projects</span>
+      </div>
     </div>
-    <div class="aboutWord">
-      <img src="./img/About Me.svg" alt="about">
-      <p>
-       I deliver the best professional make in all of LA. You can 
-       always hire me for the best job. some other short text here and
-        i am done. This should be a long text giving details about the 
-        makeup artist, her/his professional experience and what not.
-      </p>
-    </div>
+    <div id="default-carousel" class="relative h-[18rem] sm:h-[25rem] md:h-[30rem] lg:h-[40rem] xl:h-[55rem] w-full" data-carousel="slide">
+      <!-- Carousel wrapper  lg:h-[55rem] -->
+      <div class="relative  h-auto md:h-96">
+           <!-- Item 1 -->
+          <div class="duration-700 ease-in-out" data-carousel-item>
+              <img src="./img/image 1.svg" class="absolute block w-full" alt="...">
+          </div>
+          <!-- Item 2 -->
+          <div class="duration-700 ease-in-out" data-carousel-item>
+              <img src="./img/image 3.svg" class="absolute block w-full " alt="...">
+          </div>
+
+          <div class="duration-700 ease-in-out" data-carousel-item>
+              <img src="./img/image 4.svg" class="absolute block w-full" alt="...">
+          </div>
+      </div>
+    
+      <!-- Slider indicators -->
+      <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+          <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+      </div>
+    
+      <!-- Slider controls -->
+      <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+          <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+              <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+              </svg>
+              <span class="sr-only">Previous</span>
+          </span>
+      </button>
+      <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+          <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+              <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+              </svg>
+              <span class="sr-only">Next</span>
+          </span>
+      </button>
     </div>
    </section>
    
-   <section class="container myskill" id="skill">
-     <div class="svgg"><img src="./img/My Skills.svg" alt="my skill" class="text-center"></div>
-     <div class="skills">
-       <div class="skill1">
-         <img src="./img/Group 8.svg" alt="">
-         <div class="text-left pt-3 mt-5">
-          <h1>FX Prosthetics</h1>
-          <p>This text further elaborates the sub-heading above. It is supposed to be a short text like this one.</p>
-         </div>
-       </div>
-       <div class="skill1">
-         <img src="./img/Group 9.svg" alt="">
-         <div class="text-left pt-3 mt-5">
-          <h1>Sculpting Techniques</h1>
-          <p>This text further elaborates the sub-heading above. It is supposed to be a short text like this one.</p>
-         </div>
-       </div>
-       <div class="skill1">
-         <img src="./img/Group 10.svg" alt="">
-         <div class="text-left pt-3 mt-5">
-          <h1>FX Prosthetics</h1>
-          <p>This text further elaborates the sub-heading above. It is supposed to be a short text like this one.</p>
-         </div>
-       </div>
-     </div>
-   </section>
+  <section class="container" id="about">
+    <div
+      class="flex flex-col items-center px-14 py-32 bg-white max-md:px-5 max-md:py-24"
+      id="about"
+    >
+    <div class="header-text">
+      <span class="black">About</span>
+      <span class="salmon">Us</span>
+    </div>
+      <div
+        class="mt-6 text-3xl leading-10 max-w-[1154px] max-sm:text-2xl max-sm:leading-9"
+      >
+      Moako Engineering Ltd. is a multidisciplinary engineering firm committed to delivering innovative, reliable, and sustainable solutions across various sectors. Founded with a passion for excellence and a vision to shape a better-built environment.
 
-   <section class="container" id="portfolio">
-    <div class="myportfolio">
-      <div class="svgg"><img src="./img/My Portfolio.svg" alt="my skill" class="text-center"></div>
-    <div class="portfolio">
-      <div class="shadow port1"><img src="./img/Rectangle 4.svg" alt=""></div>
-      <div class="shadow port2"><img src="./img/Rectangle 6.svg" alt=""></div>
-      <div class="shadow port3"><img src="./img/Rectangle 7.svg" alt=""></div>
-      <div class="shadow port4"><img src="./img/Rectangle 5.svg" alt=""></div>
+      At Moako Engineering, we believe engineering is more than just technical expertise — it’s about creating value, enhancing lives, and building the future. Whether we're constructing infrastructures, powering homes with clean energy, or transforming spaces with modern interiors, our approach is rooted in quality, efficiency, and integrity.
+      With a dynamic team of seasoned professionals and forward-thinking innovators, we are dedicated to exceeding client expectations, fostering strong partnerships, and delivering projects that stand the test of time.
+      
+      <p class="mt-10">Let’s build a smarter, more sustainable world — together.</p>
+      
+      </div>
     </div>
-    <div class="portfolio mt-5 pt-3">
-      <div class="shadow port11"><img src="./img/Rectangle 9.svg" alt=""></div>
-      <div class="shadow port2"><img src="./img/Rectangle 10.svg" alt=""></div>
-      <div class="shadow port3"><img src="./img/Rectangle 11.svg" alt=""></div>
-      <div class="shadow port4"><img src="./img/Rectangle 8.svg" alt=""></div>
+  </section>
+   
+   <section class="container myskill" id="skill">
+    <div class="flex justify-center">
+      <div class="header-text">
+        <span class="black">Our</span>
+        <span class="salmon">Services</span>
+      </div>
     </div>
-    </div>
+    <section class="flex p-10 bg-white max-md:flex-col max-md:p-5 max-sm:p-4" id="services">
+      <nav
+        class="flex flex-col gap-9 mr-60 max-md:flex-row max-md:justify-center max-md:mb-10 max-sm:gap-5"
+      >
+        <a
+          href="#"
+          class="flex justify-center items-center h-[91px] w-[91px] max-sm:h-[70px] max-sm:w-[70px] bg-white rounded-lg hover:bg-violet-600 border border-[#142851]"
+        >
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M21.75 12.0001C21.7469 14.383 20.8726 16.6826 19.2917 18.4657C17.7109 20.2488 15.5326 21.3922 13.1671 21.6807C13.1145 21.6867 13.0611 21.6814 13.0107 21.6653C12.9602 21.6491 12.9137 21.6224 12.8743 21.587C12.8348 21.5516 12.8034 21.5082 12.782 21.4597C12.7605 21.4112 12.7496 21.3587 12.75 21.3057V14.2501H15C15.1028 14.2503 15.2045 14.2294 15.2989 14.1886C15.3933 14.1479 15.4783 14.0882 15.5487 14.0132C15.619 13.9382 15.6732 13.8495 15.7078 13.7527C15.7424 13.6559 15.7568 13.553 15.75 13.4504C15.7334 13.2576 15.6444 13.0781 15.5009 12.9482C15.3574 12.8183 15.1701 12.7475 14.9765 12.7501H12.75V10.5001C12.75 10.1023 12.908 9.72074 13.1893 9.43944C13.4706 9.15813 13.8521 9.0001 14.25 9.0001H15.75C15.8528 9.00032 15.9545 8.97941 16.0489 8.93865C16.1433 8.89789 16.2283 8.83816 16.2987 8.76316C16.369 8.68817 16.4232 8.59951 16.4578 8.5027C16.4924 8.4059 16.5068 8.303 16.5 8.20041C16.4834 8.00722 16.3941 7.82752 16.2502 7.69755C16.1063 7.56757 15.9185 7.49701 15.7246 7.5001H14.25C13.4543 7.5001 12.6912 7.81617 12.1286 8.37878C11.566 8.94139 11.25 9.70445 11.25 10.5001V12.7501H8.99996C8.89714 12.7499 8.79538 12.7708 8.70099 12.8115C8.60659 12.8523 8.52159 12.912 8.45126 12.987C8.38092 13.062 8.32676 13.1507 8.29213 13.2475C8.2575 13.3443 8.24315 13.4472 8.24996 13.5498C8.26655 13.743 8.35579 13.9227 8.49968 14.0527C8.64357 14.1826 8.8314 14.2532 9.02527 14.2501H11.25V21.3076C11.2503 21.3605 11.2394 21.4129 11.218 21.4613C11.1967 21.5097 11.1653 21.5531 11.126 21.5885C11.0866 21.6239 11.0403 21.6506 10.9899 21.6668C10.9395 21.683 10.8863 21.6884 10.8337 21.6826C8.40498 21.3868 6.1758 20.19 4.5874 18.329C2.99901 16.4681 2.16716 14.0786 2.25652 11.6335C2.44402 6.57104 6.54464 2.45541 11.6109 2.25854C12.9225 2.20773 14.231 2.42199 15.4579 2.8885C16.6848 3.35502 17.8051 4.0642 18.7516 4.97363C19.6981 5.88306 20.4515 6.97405 20.9667 8.18136C21.4819 9.38866 21.7483 10.6875 21.75 12.0001Z"
+              fill="#142851"
+            ></path>
+          </svg>
+        </a>
+        <a
+          href="https://www.instagram.com/moakogroup?igsh=MWhpam4zOGJyb25icA=="
+          target="_blank"
+          class="flex justify-center items-center h-[91px] w-[91px] max-sm:h-[70px] max-sm:w-[70px] bg-white rounded-lg border border-[#142851] hover:bg-blue"
+        >
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16.5 2.25H7.5C6.10807 2.25149 4.77358 2.80509 3.78933 3.78933C2.80509 4.77358 2.25149 6.10807 2.25 7.5V16.5C2.25149 17.8919 2.80509 19.2264 3.78933 20.2107C4.77358 21.1949 6.10807 21.7485 7.5 21.75H16.5C17.8919 21.7485 19.2264 21.1949 20.2107 20.2107C21.1949 19.2264 21.7485 17.8919 21.75 16.5V7.5C21.7485 6.10807 21.1949 4.77358 20.2107 3.78933C19.2264 2.80509 17.8919 2.25149 16.5 2.25ZM12 16.5C11.11 16.5 10.24 16.2361 9.49993 15.7416C8.75991 15.2471 8.18314 14.5443 7.84254 13.7221C7.50195 12.8998 7.41283 11.995 7.58647 11.1221C7.7601 10.2492 8.18868 9.44736 8.81802 8.81802C9.44736 8.18868 10.2492 7.7601 11.1221 7.58647C11.995 7.41283 12.8998 7.50195 13.7221 7.84254C14.5443 8.18314 15.2471 8.75991 15.7416 9.49993C16.2361 10.24 16.5 11.11 16.5 12C16.4988 13.1931 16.0243 14.337 15.1806 15.1806C14.337 16.0243 13.1931 16.4988 12 16.5ZM17.625 7.5C17.4025 7.5 17.185 7.43402 17 7.3104C16.815 7.18679 16.6708 7.01109 16.5856 6.80552C16.5005 6.59995 16.4782 6.37375 16.5216 6.15552C16.565 5.93729 16.6722 5.73684 16.8295 5.5795C16.9868 5.42217 17.1873 5.31502 17.4055 5.27162C17.6238 5.22821 17.85 5.25049 18.0555 5.33564C18.2611 5.42078 18.4368 5.56498 18.5604 5.74998C18.684 5.93499 18.75 6.1525 18.75 6.375C18.75 6.67337 18.6315 6.95952 18.4205 7.1705C18.2095 7.38147 17.9234 7.5 17.625 7.5ZM15 12C15 12.5933 14.8241 13.1734 14.4944 13.6667C14.1648 14.1601 13.6962 14.5446 13.1481 14.7716C12.5999 14.9987 11.9967 15.0581 11.4147 14.9424C10.8328 14.8266 10.2982 14.5409 9.87868 14.1213C9.45912 13.7018 9.1734 13.1672 9.05764 12.5853C8.94189 12.0033 9.0013 11.4001 9.22836 10.8519C9.45542 10.3038 9.83994 9.83524 10.3333 9.50559C10.8266 9.17595 11.4067 9 12 9C12.7956 9 13.5587 9.31607 14.1213 9.87868C14.6839 10.4413 15 11.2044 15 12Z"
+              fill="#142851"
+            ></path>
+          </svg>
+        </a>
+        <a
+          href="#"
+          class="flex justify-center items-center h-[91px] w-[91px] max-sm:h-[70px] max-sm:w-[70px] bg-white rounded-lg border border-[#142851] hover:bg-gray-50"
+        >
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M20.25 2.25H3.75C3.35218 2.25 2.97064 2.40804 2.68934 2.68934C2.40804 2.97064 2.25 3.35218 2.25 3.75V20.25C2.25 20.6478 2.40804 21.0294 2.68934 21.3107C2.97064 21.592 3.35218 21.75 3.75 21.75H20.25C20.6478 21.75 21.0294 21.592 21.3107 21.3107C21.592 21.0294 21.75 20.6478 21.75 20.25V3.75C21.75 3.35218 21.592 2.97064 21.3107 2.68934C21.0294 2.40804 20.6478 2.25 20.25 2.25ZM9 16.5C9 16.6989 8.92098 16.8897 8.78033 17.0303C8.63968 17.171 8.44891 17.25 8.25 17.25C8.05109 17.25 7.86032 17.171 7.71967 17.0303C7.57902 16.8897 7.5 16.6989 7.5 16.5V10.5C7.5 10.3011 7.57902 10.1103 7.71967 9.96967C7.86032 9.82902 8.05109 9.75 8.25 9.75C8.44891 9.75 8.63968 9.82902 8.78033 9.96967C8.92098 10.1103 9 10.3011 9 10.5V16.5ZM8.25 9C8.0275 9 7.80999 8.93402 7.62498 8.8104C7.43998 8.68679 7.29578 8.51109 7.21064 8.30552C7.12549 8.09995 7.10321 7.87375 7.14662 7.65552C7.19002 7.43729 7.29717 7.23684 7.4545 7.0795C7.61184 6.92217 7.81229 6.81502 8.03052 6.77162C8.24875 6.72821 8.47495 6.75049 8.68052 6.83564C8.88609 6.92078 9.06179 7.06498 9.1854 7.24998C9.30902 7.43499 9.375 7.6525 9.375 7.875C9.375 8.17337 9.25647 8.45952 9.0455 8.6705C8.83452 8.88147 8.54837 9 8.25 9ZM17.25 16.5C17.25 16.6989 17.171 16.8897 17.0303 17.0303C16.8897 17.171 16.6989 17.25 16.5 17.25C16.3011 17.25 16.1103 17.171 15.9697 17.0303C15.829 16.8897 15.75 16.6989 15.75 16.5V13.125C15.75 12.6277 15.5525 12.1508 15.2008 11.7992C14.8492 11.4475 14.3723 11.25 13.875 11.25C13.3777 11.25 12.9008 11.4475 12.5492 11.7992C12.1975 12.1508 12 12.6277 12 13.125V16.5C12 16.6989 11.921 16.8897 11.7803 17.0303C11.6397 17.171 11.4489 17.25 11.25 17.25C11.0511 17.25 10.8603 17.171 10.7197 17.0303C10.579 16.8897 10.5 16.6989 10.5 16.5V10.5C10.5009 10.3163 10.5693 10.1393 10.692 10.0026C10.8148 9.86596 10.9834 9.7791 11.166 9.75852C11.3485 9.73794 11.5323 9.78508 11.6824 9.891C11.8325 9.99691 11.9385 10.1542 11.9803 10.3331C12.4877 9.98894 13.0792 9.78947 13.6914 9.75611C14.3036 9.72276 14.9133 9.85679 15.455 10.1438C15.9968 10.4308 16.4501 10.86 16.7664 11.3852C17.0826 11.9105 17.2498 12.5119 17.25 13.125V16.5Z"
+              fill="#142851"
+            ></path>
+          </svg>
+        </a>
+      </nav>
+    
+      <main class="flex-1">
+        <header class="mb-20 max-md:mb-10">
+          <h1
+            class="mb-10 max-w-screen-sm text-3xl leading-10 text-neutral-800 max-md:mb-8 max-md:text-2xl max-md:leading-9 max-sm:text-xl max-sm:leading-8"
+          >
+            A leading provider of multidisciplinary General Engineering Services,
+            contributing to sustainable development.
+          </h1>
+          <div
+            class="flex flex-wrap gap-2.5 ml-auto max-w-[263px] max-md:m-0 max-md:max-w-full max-sm:gap-1.5"
+          >
+            <span
+              class="px-2.5 py-1.5 text-base tracking-normal bg-indigo-50 text-neutral-800 max-sm:px-2 max-sm:py-1 max-sm:text-sm"
+              >Quality</span
+            >
+            <span
+              class="px-2.5 py-1.5 text-base tracking-normal bg-indigo-50 text-neutral-800 max-sm:px-2 max-sm:py-1 max-sm:text-sm"
+              >Integrity</span
+            >
+            <span
+              class="px-2.5 py-1.5 text-base tracking-normal bg-indigo-50 text-neutral-800 max-sm:px-2 max-sm:py-1 max-sm:text-sm"
+              >Innovation</span
+            >
+            <span
+              class="px-2.5 py-1.5 text-base tracking-normal bg-indigo-50 text-neutral-800 max-sm:px-2 max-sm:py-1 max-sm:text-sm"
+              >Sustainability</span
+            >
+            <span
+              class="px-2.5 py-1.5 text-base tracking-normal bg-indigo-50 text-neutral-800 max-sm:px-2 max-sm:py-1 max-sm:text-sm"
+              >Customer-Centric Approach</span
+            >
+          </div>
+        </header>
+        <!-- fill="url(#paint0_linear_15_217)" -->
+        <section
+          class="grid gap-8 grid-cols-[repeat(2,1fr)] max-w-[836px] max-md:max-w-full max-md:grid-cols-[1fr]"
+        >
+          <article
+            class="flex flex-col p-6 bg-indigo-50 h-[298px] max-sm:p-4 max-sm:h-auto onHover"
+          >
+            <div
+              class="flex justify-center items-center p-6 mb-5 h-[74px] w-[74px] max-sm:p-5 max-sm:mb-4 max-sm:h-[60px] max-sm:w-[60px]"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M20.2303 11.0783C20.2019 10.9581 20.1443 10.8468 20.0625 10.7542C19.9807 10.6617 19.8774 10.5907 19.7616 10.5477L14.3607 8.52178L15.735 1.64709C15.7662 1.48736 15.7445 1.32184 15.6733 1.17551C15.6021 1.02918 15.4852 0.90998 15.3403 0.835894C15.1954 0.761808 15.0304 0.736858 14.8701 0.764809C14.7097 0.79276 14.5629 0.872095 14.4516 0.990843L3.95159 12.2408C3.86631 12.3307 3.80462 12.4403 3.77203 12.5598C3.73943 12.6793 3.73696 12.8051 3.76481 12.9258C3.79267 13.0465 3.84999 13.1584 3.93166 13.2516C4.01334 13.3447 4.11681 13.4162 4.23284 13.4596L9.63566 15.4855L8.26503 22.3527C8.23391 22.5124 8.25558 22.678 8.32679 22.8243C8.39799 22.9706 8.51485 23.0898 8.65974 23.1639C8.80464 23.238 8.96969 23.263 9.13001 23.235C9.29032 23.2071 9.4372 23.1277 9.54847 23.009L20.0485 11.759C20.1322 11.6691 20.1926 11.56 20.2243 11.4413C20.256 11.3227 20.2581 11.198 20.2303 11.0783ZM10.2535 20.0624L11.235 15.1518C11.2702 14.9776 11.2423 14.7966 11.1565 14.6411C11.0706 14.4855 10.9324 14.3655 10.7663 14.3024L5.81253 12.4415L13.7457 3.94209L12.765 8.85272C12.7299 9.02688 12.7577 9.20785 12.8436 9.3634C12.9294 9.51895 13.0677 9.63898 13.2338 9.70209L18.1838 11.5583L10.2535 20.0624Z"
+                  fill="#142851"
+                ></path>
+                <defs>
+                  <linearGradient
+                    id="paint0_linear_15_217"
+                    x1="3.74384"
+                    y1="11.9986"
+                    x2="20.2479"
+                    y2="11.9986"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#CB9D3E"></stop>
+                    <stop offset="1" stop-color="#EFC548"></stop>
+                  </linearGradient>
+                </defs>
+              </svg>
+            </div>
+            <h2
+              class="mb-5 text-xl font-medium text-neutral-800 max-sm:mb-4 max-sm:text-lg"
+            >
+              Electrical Engineering
+            </h2>
+            <p
+              class="text-lg leading-7 text-neutral-800 max-sm:text-base max-sm:leading-6"
+            >
+              Electrical installations, power systems design, energy-efficient
+              solutions, lighting systems, and power grid management.
+            </p>
+          </article>
+    
+          <article
+            class="flex flex-col p-6 bg-indigo-50 h-[298px] max-sm:p-4 max-sm:h-auto onHover"
+          >
+            <div
+              class="flex justify-center items-center p-6 mb-5 h-[74px] w-[74px] max-sm:p-5 max-sm:mb-4 max-sm:h-[60px] max-sm:w-[60px]"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.02427 3.47353C8.99944 3.37812 8.99367 3.27874 9.00728 3.1811C9.0209 3.08345 9.05363 2.98944 9.10361 2.90446C9.1536 2.81947 9.21984 2.74518 9.29856 2.68582C9.37729 2.62646 9.46694 2.58321 9.56239 2.55853C11.1612 2.14618 12.8386 2.14618 14.4374 2.55853C14.6145 2.60387 14.7689 2.71233 14.8717 2.86352C14.9744 3.01471 15.0184 3.19823 14.9954 3.37958C14.9724 3.56092 14.8839 3.72762 14.7466 3.84833C14.6093 3.96904 14.4327 4.03546 14.2499 4.0351C14.1866 4.03476 14.1236 4.02658 14.0624 4.01072C12.7095 3.66179 11.2903 3.66179 9.93739 4.01072C9.74508 4.06033 9.54094 4.03163 9.36976 3.93093C9.19858 3.83022 9.07433 3.66573 9.02427 3.47353Z"
+                  fill="#142851"
+                ></path>
+              </svg>
+            </div>
+            <h2
+              class="mb-5 text-xl font-medium text-neutral-800 max-sm:mb-4 max-sm:text-lg"
+            >
+              Interior Decoration
+            </h2>
+            <p
+              class="text-lg leading-7 text-neutral-800 max-sm:text-base max-sm:leading-6"
+            >
+              Office and home interior design, space planning, furniture layout,
+              lighting design, and bespoke design elements for residential and
+              commercial properties.
+            </p>
+          </article>
+    
+          <article
+            class="flex flex-col p-6 bg-indigo-50 h-[298px] max-sm:p-4 max-sm:h-auto onHover"
+          >
+            <div
+              class="flex justify-center items-center p-6 mb-5 h-[74px] w-[74px] max-sm:p-5 max-sm:mb-4 max-sm:h-[60px] max-sm:w-[60px]"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_15_241)">
+                  <path
+                    d="M23.9456 10.9688L22.6331 7.6875C22.5218 7.40988 22.3296 7.17209 22.0816 7.00494C21.8335 6.83778 21.541 6.74897 21.2419 6.75H18V6C18 5.80109 17.921 5.61032 17.7803 5.46967C17.6397 5.32902 17.4489 5.25 17.25 5.25H3C2.60218 5.25 2.22064 5.40804 1.93934 5.68934C1.65804 5.97064 1.5 6.35218 1.5 6.75V17.25C1.5 17.6478 1.65804 18.0294 1.93934 18.3107C2.22064 18.592 2.60218 18.75 3 18.75H4.59375C4.75898 19.3953 5.13428 19.9673 5.66048 20.3757C6.18669 20.7842 6.83387 21.0059 7.5 21.0059C8.16613 21.0059 8.81331 20.7842 9.33952 20.3757C9.86573 19.9673 10.241 19.3953 10.4063 18.75H15.0938C15.259 19.3953 15.6343 19.9673 16.1605 20.3757C16.6867 20.7842 17.3339 21.0059 18 21.0059C18.6661 21.0059 19.3133 20.7842 19.8395 20.3757C20.3657 19.9673 20.741 19.3953 20.9063 18.75H22.5C22.8978 18.75 23.2794 18.592 23.5607 18.3107C23.842 18.0294 24 17.6478 24 17.25V11.25C24.0003 11.1536 23.9818 11.0581 23.9456 10.9688ZM18 8.25H21.2419L22.1419 10.5H18V8.25ZM3 6.75H16.5V12.75H3V6.75ZM7.5 19.5C7.20333 19.5 6.91332 19.412 6.66665 19.2472C6.41997 19.0824 6.22771 18.8481 6.11418 18.574C6.00065 18.2999 5.97094 17.9983 6.02882 17.7074C6.0867 17.4164 6.22956 17.1491 6.43934 16.9393C6.64912 16.7296 6.91639 16.5867 7.20737 16.5288C7.49834 16.4709 7.79994 16.5006 8.07403 16.6142C8.34811 16.7277 8.58238 16.92 8.7472 17.1666C8.91203 17.4133 9 17.7033 9 18C9 18.3978 8.84197 18.7794 8.56066 19.0607C8.27936 19.342 7.89783 19.5 7.5 19.5Z"
+                    fill="#142851"
+                  ></path>
+                </g>
+                <defs>
+                  <clipPath id="clip0_15_241">
+                    <rect width="24" height="24" fill="white"></rect>
+                  </clipPath>
+                </defs>
+              </svg>
+            </div>
+            <h2
+              class="mb-5 text-xl font-medium text-neutral-800 max-sm:mb-4 max-sm:text-lg"
+            >
+              Supply (Materials & Equipment)
+            </h2>
+            <p
+              class="text-lg leading-7 text-neutral-800 max-sm:text-base max-sm:leading-6"
+            >
+              Service Offerings: Supplying quality construction materials,
+              electrical components, furniture, and tools to contractors or direct
+              to consumers.
+            </p>
+          </article>
+    
+          <article
+            class="flex flex-col p-6 bg-indigo-50 h-[298px] max-sm:p-4 max-sm:h-auto onHover"
+          >
+            <div
+              class="flex justify-center items-center p-6 mb-5 h-[74px] w-[74px] max-sm:p-5 max-sm:mb-4 max-sm:h-[60px] max-sm:w-[60px]"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M3.0001 9.75C3.0001 9.55109 3.07912 9.36032 3.21977 9.21967C3.36042 9.07902 3.55119 9 3.7501 9H5.2501C5.44901 9 5.63978 9.07902 5.78043 9.21967C5.92108 9.36032 6.0001 9.55109 6.0001 9.75C6.0001 9.94891 5.92108 10.1397 5.78043 10.2803C5.63978 10.421 5.44901 10.5 5.2501 10.5H3.7501C3.55119 10.5 3.36042 10.421 3.21977 10.2803C3.07912 10.1397 3.0001 9.94891 3.0001 9.75Z"
+                  fill="#142851"
+                ></path>
+              </svg>
+            </div>
+            <h2
+              class="mb-5 text-xl font-medium text-neutral-800 max-sm:mb-4 max-sm:text-lg"
+            >
+              Renewable Energy
+            </h2>
+            <p
+              class="text-lg leading-7 text-neutral-800 max-sm:text-base max-sm:leading-6"
+            >
+              Service Offerings: Solar panel installation, energy audits, solar
+              system design, and consulting for businesses and residential clients
+              looking to adopt renewable energy solutions.
+            </p>
+          </article>
+    
+          <article
+            class="flex flex-col p-6 bg-indigo-50 h-[298px] max-sm:p-4 max-sm:h-auto onHover"
+          >
+            <div
+              class="flex justify-center items-center p-6 mb-5 h-[74px] w-[74px] max-sm:p-5 max-sm:mb-4 max-sm:h-[60px] max-sm:w-[60px]"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21.75 21H19.5V3H20.25C20.4489 3 20.6397 2.92098 20.7803 2.78033C20.921 2.63968 21 2.44891 21 2.25C21 2.05109 20.921 1.86032 20.7803 1.71967C20.6397 1.57902 20.4489 1.5 20.25 1.5H3.75C3.55109 1.5 3.36032 1.57902 3.21967 1.71967C3.07902 1.86032 3 2.05109 3 2.25C3 2.44891 3.07902 2.63968 3.21967 2.78033C3.36032 2.92098 3.55109 3 3.75 3H4.5V21H2.25C2.05109 21 1.86032 21.079 1.71967 21.2197C1.57902 21.3603 1.5 21.5511 1.5 21.75C1.5 21.9489 1.57902 22.1397 1.71967 22.2803C1.86032 22.421 2.05109 22.5 2.25 22.5H21.75C21.9489 22.5 22.1397 22.421 22.2803 22.2803C22.421 22.1397 22.5 21.9489 22.5 21.75C22.5 21.5511 22.421 21.3603 22.2803 21.2197C22.1397 21.079 21.9489 21 21.75 21Z"
+                  fill="#142851"
+                ></path>
+              </svg>
+            </div>
+            <h2
+              class="mb-5 text-xl font-medium text-neutral-800 max-sm:mb-4 max-sm:text-lg"
+            >
+              Civil Engineering
+            </h2>
+            <p
+              class="text-lg leading-7 text-neutral-800 max-sm:text-base max-sm:leading-6"
+            >
+              Service Offerings: Infrastructure design, road construction, drainage
+              systems, structural engineering, water treatment systems, geotechnical
+              services.
+            </p>
+          </article>
+    
+          <article
+            class="flex flex-col p-6 bg-indigo-50 h-[298px] max-sm:p-4 max-sm:h-auto onHover"
+          >
+            <div
+              class="flex justify-center items-center p-6 mb-5 h-[74px] w-[74px] max-sm:p-5 max-sm:mb-4 max-sm:h-[60px] max-sm:w-[60px]"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="icon"
+              >
+                <path
+                  d="M22.5 17.2501H21.75V5.42824L22.6566 5.23324C22.755 5.21479 22.8487 5.17682 22.9321 5.12159C23.0156 5.06635 23.0872 4.99496 23.1427 4.91162C23.1981 4.82828 23.2364 4.73468 23.2551 4.63634C23.2738 4.53799 23.2726 4.4369 23.2517 4.33901C23.2307 4.24112 23.1904 4.14842 23.133 4.06638C23.0756 3.98433 23.0024 3.9146 22.9177 3.86128C22.833 3.80797 22.7384 3.77217 22.6396 3.75597C22.5408 3.73978 22.4398 3.74352 22.3425 3.76699L1.3425 8.26699C1.16159 8.30603 1.00149 8.41058 0.89302 8.56054C0.784545 8.7105 0.735349 8.89527 0.754894 9.07932C0.774438 9.26336 0.861343 9.43368 0.998893 9.55751C1.13644 9.68134 1.31492 9.74994 1.5 9.75012C1.55326 9.75002 1.60636 9.74437 1.65844 9.73324L2.25 9.60668V17.2501H1.5C1.30109 17.2501 1.11032 17.3291 0.96967 17.4698C0.829018 17.6104 0.75 17.8012 0.75 18.0001C0.75 18.199 0.829018 18.3898 0.96967 18.5304C1.11032 18.6711 1.30109 18.7501 1.5 18.7501H22.5C22.6989 18.7501 22.8897 18.6711 23.0303 18.5304C23.171 18.3898 23.25 18.199 23.25 18.0001C23.25 17.8012 23.171 17.6104 23.0303 17.4698C22.8897 17.3291 22.6989 17.2501 22.5 17.2501Z"
+                  fill="#142851"
+                ></path>
+              </svg>
+            </div>
+            <h2
+              class="mb-5 text-xl font-medium text-neutral-800 max-sm:mb-4 max-sm:text-lg"
+            >
+              General Contracts
+            </h2>
+            <p
+              class="text-lg leading-7 text-neutral-800 max-sm:text-base max-sm:leading-6"
+            >
+              Service offering: Full-service general contracting for construction,
+              renovation, and project management.
+            </p>
+          </article>
+
+          <article
+            class="flex flex-col p-6 bg-indigo-50 h-[298px] max-sm:p-4 max-sm:h-auto onHover"
+          >
+            <div
+              class="flex justify-center items-center p-6 mb-5 h-[74px] w-[74px] max-sm:p-5 max-sm:mb-4 max-sm:h-[60px] max-sm:w-[60px]"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.02427 3.47353C8.99944 3.37812 8.99367 3.27874 9.00728 3.1811C9.0209 3.08345 9.05363 2.98944 9.10361 2.90446C9.1536 2.81947 9.21984 2.74518 9.29856 2.68582C9.37729 2.62646 9.46694 2.58321 9.56239 2.55853C11.1612 2.14618 12.8386 2.14618 14.4374 2.55853C14.6145 2.60387 14.7689 2.71233 14.8717 2.86352C14.9744 3.01471 15.0184 3.19823 14.9954 3.37958C14.9724 3.56092 14.8839 3.72762 14.7466 3.84833C14.6093 3.96904 14.4327 4.03546 14.2499 4.0351C14.1866 4.03476 14.1236 4.02658 14.0624 4.01072C12.7095 3.66179 11.2903 3.66179 9.93739 4.01072C9.74508 4.06033 9.54094 4.03163 9.36976 3.93093C9.19858 3.83022 9.07433 3.66573 9.02427 3.47353Z"
+                  fill="#142851"
+                ></path>
+              </svg>
+            </div>
+            <h2
+              class="mb-5 text-xl font-medium text-neutral-800 max-sm:mb-4 max-sm:text-lg"
+            >
+            Metallurgical Engineering
+            </h2>
+            <p
+              class="text-lg leading-7 text-neutral-800 max-sm:text-base max-sm:leading-6"
+            >
+            Material Selection and Testing, Metallurgical Process Design, Failure Analysis and Forensic Engineering, Corrosion Prevention, Heat Treatment & Casting Services.
+            
+            </p>
+          </article>
+
+          <article
+            class="flex flex-col p-6 bg-indigo-50 h-[298px] max-sm:p-4 max-sm:h-auto onHover"
+          >
+            <div
+              class="flex justify-center items-center p-6 mb-5 h-[74px] w-[74px] max-sm:p-5 max-sm:mb-4 max-sm:h-[60px] max-sm:w-[60px]"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.02427 3.47353C8.99944 3.37812 8.99367 3.27874 9.00728 3.1811C9.0209 3.08345 9.05363 2.98944 9.10361 2.90446C9.1536 2.81947 9.21984 2.74518 9.29856 2.68582C9.37729 2.62646 9.46694 2.58321 9.56239 2.55853C11.1612 2.14618 12.8386 2.14618 14.4374 2.55853C14.6145 2.60387 14.7689 2.71233 14.8717 2.86352C14.9744 3.01471 15.0184 3.19823 14.9954 3.37958C14.9724 3.56092 14.8839 3.72762 14.7466 3.84833C14.6093 3.96904 14.4327 4.03546 14.2499 4.0351C14.1866 4.03476 14.1236 4.02658 14.0624 4.01072C12.7095 3.66179 11.2903 3.66179 9.93739 4.01072C9.74508 4.06033 9.54094 4.03163 9.36976 3.93093C9.19858 3.83022 9.07433 3.66573 9.02427 3.47353Z"
+                  fill="#142851"
+                ></path>
+              </svg>
+            </div>
+            <h2
+              class="mb-5 text-xl font-medium text-neutral-800 max-sm:mb-4 max-sm:text-lg"
+            >
+            Consultation
+            </h2>
+            <p
+              class="text-lg leading-7 text-neutral-800 max-sm:text-base max-sm:leading-6"
+            >
+            Full-service general consulting for Engineering related services.            
+            </p>
+          </article>
+        </section>
+      </main>
+  </section>
    </section>
 
    <section class="container-fluid myclient" id="client">
-    <div class="svgg"><img src="./img/My Clients.svg" alt="my skill"></div>
+    <div class="flex justify-center">
+      <div class="header-text">
+        <span class="black">Our</span>
+        <span class="salmon">Clients</span>
+      </div>
+    </div>
      <div class="clientCon">
 
       <div class="client">
@@ -176,10 +599,15 @@
    </section>
 
    <section class="container myclients" id="contact">
-     <div class="svgg"><img src="./img/Contact Me.svg" alt="my skill"></div>
+    <div class="flex justify-center">
+      <div class="header-text">
+        <span class="black">Contact</span>
+        <span class="salmon">Us</span>
+      </div>
+    </div>
     <div class="contact">
       <div class="contactImg">
-        <img src="./img/Rectangle 22.png" alt="img">
+        <!-- <img src="./img/Rectangle 22.png" alt="img"> -->
       </div>
       <div class="contactForm">
         <form action="">
@@ -198,13 +626,49 @@
         </form>
       </div>
       <div class="contactlImg2">
-        <div class="conImg"><img src="./img/Ellipse 2.svg" alt=""></div>
+        <div class="conImg"><img src="./img/contact-us.svg" alt=""></div>
         <div class="pt-5">
-            <p>Shepherd's Bush Sinclair Road, 142 flat D, W14 0NL</p>
-          <p>Julianamonday@gmail.com</p>
-          <p>+ 44 (20) 7946 0666</p>
+          <p>2, Prince Solomon Crescent, Joke Ayo, Alagbado, Lagos State.</p>
+          <p>info@moakogroup.com</p>
+          <p>+2349011608866, +2349168624646</p>
         </div>
       </div>
+    </div>
+   </section>
+
+   <section class="container">
+    <!-- Footer -->
+    <div class="flex gap-3 justify-center size-25 h-[12rem]">
+      <a href="#" target="_blank" rel="noopener noreferrer">
+        <img
+        src="https://cdn.builder.io/api/v1/image/assets/33506c606ea64647b41890a9738a9643/f7866adda9a7ead02714e09c47523eea8903adb73841c3d0bffddc436603852b"
+        alt="Footer logo 1"
+        loading="lazy"
+      />
+      </a>
+      <a href="https://www.instagram.com/moakogroup?igsh=MWhpam4zOGJyb25icA==" target="_blank" rel="noopener noreferrer">
+        <img
+        src="https://cdn.builder.io/api/v1/image/assets/33506c606ea64647b41890a9738a9643/8822aa8554cf32303b5717017d0c5137fed5e24624259a7285f1a217ac3fcd3d"
+        alt="Footer logo 2"
+        loading="lazy"
+      />
+      </a>
+
+      <a href="#" target="_blank" rel="noopener noreferrer">
+        <img
+        src="https://cdn.builder.io/api/v1/image/assets/33506c606ea64647b41890a9738a9643/0b4cbf2fe3330dcb971d9fef5cd9f8f2c8e80e4731549eb575ae43f6ecbc0f30"
+        alt="Footer logo 3"
+        loading="lazy"
+      />
+      </a>
+    </div>
+   </section>
+
+   <section class="">
+    <div class="whasapp-logo">
+      <a href="https://api.whatsapp.com/send?phone=2349011608866&text=Hi%20Engineer%20Kabir%2C%20my%20name%20is%20%0A(replace%20this%20part%20with%20your%20name)%2C%20%0AAnd%20I%20would%20like%20to%20%0A(Replace%20this%20with%20your%20enquiries.)" target="_blank">
+        <img src="./img/WhatsApp-Logo.svg" alt="whatsApp logo">
+      </a>
     </div>
    </section>
 
@@ -212,25 +676,27 @@
     <div class="container">
       <div class="footArear">
         <div class="footArea1">
-          <h1>Flaxla</h1>
-          <p class="ml-auto w-70"> This text describes what the site is about in a few short sentences. I guess this is where it ends.</p>
+          <h1>Moako Group</h1>
+          <p class="ml-auto w-70"> Quality, Integrity, Innovation, Sustainability, Customer-Centric Approach.</p>
           <div class="wit">
             <p class=""><img src="./img/Facebook.svg"></p>
-            <p class=""><img src="./img/Twitter.svg"></p>
-            <p class=""><img src="./img/Instagram.svg"></p>
+            <p class=""><img src="./img/Twitter.svg"></p> 
+            <p class=""><a href="https://www.instagram.com/moakogroup?igsh=MWhpam4zOGJyb25icA==" target="_blank"><img src="./img/Instagram.svg"></a></p>
           </div>
         </div>
         <div class="footArea2">
-          <h1>Explore </h1>
-          <h3>Home</h3>
-          <h3>Portfolio</h3>
-          <h3>Book</h3>
+          <h1>Explore</h1>
+          <h3><a href="#">Home</a></h3>
+          <h3><a href="#about">About</a></h3>
+          <h3><a href="#portfolio">Portfolio</a></h3>
+          <h3><a href="#client">Clients</a></h3>
+          <h3><a href="#contact">Contact</a></h3>
         </div>
         <div class="footArea3">
           <h1>Contact</h1>
-          <p><i class="fas fa-map-marked "></i>  Shepherd's Bush Sinclair Road, 142 flat D, W14 0NL</p>
-          <p><i class="fas fa-mail-bulk"></i>  Julianamonday@gmail.com</p>
-          <p><i class="fas fa-phone    "></i>  + 44 (20) 7946 0666</p> 
+          <p><i class="fas fa-map-marked "></i>2, Prince Solomon Crescent, Joke Ayo, Alagbado, Lagos State.</p>
+          <p><i class="fas fa-mail-bulk"></i>info@moakogroup.com</p>
+          <p><i class="fas fa-phone    "></i>  +2349011608866, +2349168624646</p> 
         </div>
       </div>
     </div>
@@ -244,6 +710,7 @@
  <script src="js/bootstrap.bundle.min.js"></script>
  <!-- script js -->
  <script src="js/app.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
 </body>
 
 </html>
