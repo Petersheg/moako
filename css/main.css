@@ -320,7 +320,7 @@ img {
 }
 .clientCon{
   position: relative;
-  background-image: linear-gradient(to left,#333333,#333333);
+  background-image: linear-gradient(to left,#142851,#142851);
   height: 70vh;
   color: white;
 }
